@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Mainframe:jar">
+    <output-path>$USER_HOME$/Desktop/Paper/plugins</output-path>
+    <root id="archive" name="Mainframe.jar">
+      <element id="module-output" name="Mainframe" />
+      <element id="extracted-dir" path="$USER_HOME$/Downloads/spigot-api-1.16.5.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

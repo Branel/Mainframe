@@ -1,0 +1,10 @@
+name: Mainframe
+version: 1.0.0
+author: Branel
+main: com.branel.dashboard.Mainframe
+api-version: 1.16
+commands:
+ cleanup:
+  description: lel
+  usage: /<command>
+  aliases: [cup, clean]
