@@ -7,6 +7,18 @@ commands:
   cleanup:
     description: command
     usage: /<command>
-  speed:
+  flyspeed:
     description: command
-    usage: /<command>
+    usage: /speed 0 - 100
+  walkspeed:
+    description: command
+    usage: /speed 0 - 100
+  kick:
+      description: command
+      usage: /speed 0 - 100
+  arena:
+    description: command
+    usage: /speed 0 - 100
+  pvpkit:
+    description: command
+    usage: /speed 0 - 100

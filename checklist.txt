@@ -3,3 +3,4 @@
 # TODO CHECK MAINFRAME.JAVA (YOU IDIOT)
 # TODO CHECK FOR ERRORS/PROBLEMS
 
+((Player) sender).teleport(Bukkit.getWorld("epicgamers").getSpawnLocation());
