@@ -22,3 +22,9 @@ commands:
   pvpkit:
     description: command
     usage: /speed 0 - 100
+  city:
+    description: command
+    usage: /speed 0 - 100
+  gui:
+    description: command
+    usage: /speed 0 - 100
