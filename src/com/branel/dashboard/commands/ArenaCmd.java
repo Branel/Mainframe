@@ -10,6 +10,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemFlag;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
+import org.bukkit.inventory.meta.LeatherArmorMeta;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
 
@@ -48,12 +49,22 @@ public class ArenaCmd implements CommandExecutor {
             // Item Meta
             // Tri = Trident, Chest = Chestplate
             ItemMeta Yxa = Axe.getItemMeta();
-            ItemMeta Chest = Chestplate.getItemMeta();
-            ItemMeta Leg = Leggings.getItemMeta();
-            ItemMeta Boot = Boots.getItemMeta();
-            ItemMeta Head = Helmet.getItemMeta();
+            LeatherArmorMeta Chest = (LeatherArmorMeta)Chestplate.getItemMeta();
+            LeatherArmorMeta Leg = (LeatherArmorMeta)Leggings.getItemMeta();
+            LeatherArmorMeta Boot = (LeatherArmorMeta)Boots.getItemMeta();
+            LeatherArmorMeta Head = (LeatherArmorMeta)Helmet.getItemMeta();
             ItemMeta Tri = Trident.getItemMeta();
             ItemMeta Longbow = Bow.getItemMeta();
+
+            //Leather color
+
+
+            Chest.setColor(Color.fromRGB(0, 0, 0));
+            Leg.setColor(Color.fromRGB(0, 0, 0));
+            Head.setColor(Color.fromRGB(0, 0, 0));
+            Boot.setColor(Color.fromRGB(0, 0, 0));
+
+
             // Meta Flag
             Yxa.addItemFlags(ItemFlag.HIDE_ATTRIBUTES);
             Yxa.addItemFlags(ItemFlag.HIDE_ENCHANTS);
@@ -72,6 +83,7 @@ public class ArenaCmd implements CommandExecutor {
 
 
 
+
             // Unbreakable items
             Yxa.setUnbreakable(true);
             Chest.setUnbreakable(true);
@@ -79,9 +91,10 @@ public class ArenaCmd implements CommandExecutor {
             Boot.setUnbreakable(true);
             Head.setUnbreakable(true);
             Longbow.setUnbreakable(true);
+            Tri.setUnbreakable(true);
 
             // Meta Display Name
-            Tri.setDisplayName(ChatColor.RED + "" + ChatColor.BOLD + "TRIDENT");
+            Tri.setDisplayName(ChatColor.GREEN + "" + ChatColor.BOLD + "TRIDENT");
             Yxa.setDisplayName(ChatColor.RED + "" + ChatColor.BOLD + "AXE");
             Longbow.setDisplayName(ChatColor.RED + "" + ChatColor.BOLD + "BOW");
 
