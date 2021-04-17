@@ -1,7 +1,7 @@
 # TODO BEFORE COMPILE
 # TODO CHECK PLUGIN.YML
-# TODO CHECK MAINFRAME.JAVA (YOU IDIOT)
-# TODO CHECK FOR ERRORS/PROBLEMS
+# TODO CHECK MAINFRAME.JAVA (IT'S A CLASS YOU IDIOT)
+# Build completed without errors? Maybe you know what you're doing
 
 ((Player) sender).teleport(Bukkit.getWorld("epicgamers").getSpawnLocation());
 Location loc = new Location(arena, 653.0, 135.0, 1130.0, -138, -51);

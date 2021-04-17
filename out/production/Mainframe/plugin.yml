@@ -9,22 +9,25 @@ commands:
     usage: /<command>
   flyspeed:
     description: command
-    usage: /speed 0 - 100
+    usage: /flyspeed 0 - 100
   walkspeed:
     description: command
     usage: /speed 0 - 100
   kick:
       description: command
-      usage: /speed 0 - 100
+      usage: /kick [player]
   arena:
     description: command
-    usage: /speed 0 - 100
+    usage: /arena
   pvpkit:
     description: command
-    usage: /speed 0 - 100
+    usage: /pvpkit
   city:
     description: command
-    usage: /speed 0 - 100
+    usage: /city
   gui:
     description: command
-    usage: /speed 0 - 100
+    usage: /gui
+  survivalchallenge:
+    description: command
+    usage: /survivalchallenge

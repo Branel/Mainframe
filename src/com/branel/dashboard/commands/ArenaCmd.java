@@ -32,7 +32,7 @@ public class ArenaCmd implements CommandExecutor {
             player.getPlayer().setBedSpawnLocation(loc, true);
 
             //Potion effects
-            player.addPotionEffect(new PotionEffect(PotionEffectType.INVISIBILITY, 50, 2));
+            player.addPotionEffect(new PotionEffect(PotionEffectType.INVISIBILITY, 50, 2, false, false, false));
             player.addPotionEffect(new PotionEffect(PotionEffectType.INCREASE_DAMAGE, 99999, 1));
             player.addPotionEffect(new PotionEffect(PotionEffectType.SATURATION, 99999, 99));
 
@@ -96,7 +96,7 @@ public class ArenaCmd implements CommandExecutor {
             // Meta Display Name
             Tri.setDisplayName(ChatColor.GREEN + "" + ChatColor.BOLD + "TRIDENT");
             Yxa.setDisplayName(ChatColor.RED + "" + ChatColor.BOLD + "AXE");
-            Longbow.setDisplayName(ChatColor.RED + "" + ChatColor.BOLD + "BOW");
+            Longbow.setDisplayName(ChatColor.BLUE + "" + ChatColor.BOLD + "BOW");
 
             // Set ItemMeta
             Axe.setItemMeta(Yxa);
