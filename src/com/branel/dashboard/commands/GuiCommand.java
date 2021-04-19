@@ -26,6 +26,7 @@ public class GuiCommand implements CommandExecutor {
         gui.addItem(item1);
 
         player.openInventory(gui);
-    return true;}
+    return true;
+    }
 
 }
