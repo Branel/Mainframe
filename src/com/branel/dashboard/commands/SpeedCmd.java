@@ -14,7 +14,8 @@ public class SpeedCmd implements CommandExecutor {
             return true;
         }
         Player player = (Player) sender;
-        if (cmd.getName().equalsIgnoreCase("flyspeed")){
+        if (cmd.getName().equalsIgnoreCase("flyspeed"))
+        {
             if (args.length >= 1){
                 try {
                     float amount = Float.parseFloat(args[0]);
@@ -30,7 +31,8 @@ public class SpeedCmd implements CommandExecutor {
                 player.sendMessage(ChatColor.RED + "Invalid input! /flyspeed 0 - 100.");}
 
             }
-        if (cmd.getName().equalsIgnoreCase("walkspeed")){
+        if (cmd.getName().equalsIgnoreCase("walkspeed"))
+        {
             if (args.length >= 1){
                 try {
                     float input = Float.parseFloat(args[0]);
@@ -45,8 +47,9 @@ public class SpeedCmd implements CommandExecutor {
                 player.sendMessage(ChatColor.RED + "Invalid input! /walkspeed 0 - 100.");}
 
         }
-        return true;}
+        return true;
+    }
 
-        }
+}
 
 

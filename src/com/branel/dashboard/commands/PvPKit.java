@@ -15,4 +15,6 @@ public class PvPKit implements CommandExecutor {
 
 
 
-        return true;}}
+        return true;
+    }
+}

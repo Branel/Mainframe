@@ -27,5 +27,6 @@ public class Kick implements CommandExecutor {
 
             }
         }
-    return true;}
+    return true;
+    }
 }

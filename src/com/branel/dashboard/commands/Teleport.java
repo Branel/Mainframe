@@ -41,7 +41,7 @@ public class Teleport implements CommandExecutor {
         }return true;
     }
 
-    }
+}
 
 
 

@@ -137,7 +137,9 @@ public class ArenaCmd implements CommandExecutor {
             return true;
         }
 
-        return true;}}
+        return true;
+    }
+}
 
 
 

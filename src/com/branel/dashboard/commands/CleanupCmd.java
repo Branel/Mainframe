@@ -26,4 +26,6 @@ public class CleanupCmd implements CommandExecutor {
             Bukkit.getServer().broadcastMessage(ChatColor.GREEN + "Killed all mobs.");
             return true;
         }
-    return true;}}
+    return true;
+    }
+}
