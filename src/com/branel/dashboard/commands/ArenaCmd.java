@@ -136,7 +136,6 @@ public class ArenaCmd implements CommandExecutor {
             player.setHealth(20);
             return true;
         }
-
         return true;
     }
 }

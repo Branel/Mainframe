@@ -40,7 +40,6 @@ public class Teleport implements CommandExecutor {
             sender.sendMessage("You have been teleported to the survival challenge world");
         }return true;
     }
-
 }
 
 
