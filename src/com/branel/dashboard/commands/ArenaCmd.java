@@ -28,8 +28,9 @@ public class ArenaCmd implements CommandExecutor {
             player.getInventory().clear();
             World epicgamers = Bukkit.getWorld("2021");
             Location loc = new Location(epicgamers, 1192, 200.0, 1214.0, -91, 5);
+            Location spec = new Location(epicgamers, 1214, 69, 1213, 0 , 0);
             player.teleport(loc);
-            player.getPlayer().setBedSpawnLocation(loc, true);
+            player.getPlayer().setBedSpawnLocation(spec, true);
 
             //Potion effects
             player.addPotionEffect(new PotionEffect(PotionEffectType.INVISIBILITY, 50, 2, false, false, false));
@@ -132,10 +133,11 @@ public class ArenaCmd implements CommandExecutor {
             // Set walking speed, survival, health, and message.
             player.setWalkSpeed(0.2f);
             sender.sendMessage("You have been teleported to the Arena.");
-            player.setGameMode(GameMode.SURVIVAL);
+            player.setGameMode(GameMode.ADVENTURE);
             player.setHealth(20);
             return true;
         }
+
         return true;
     }
 }
