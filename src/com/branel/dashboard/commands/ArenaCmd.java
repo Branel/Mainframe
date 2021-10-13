@@ -108,7 +108,7 @@ public class ArenaCmd implements CommandExecutor {
             Trident.setItemMeta(Tri);
             Bow.setItemMeta(Longbow);
 
-            // Enchantment
+            // Enchantments
             Trident.addEnchantment(Enchantment.VANISHING_CURSE, 1);
             Bow.addEnchantment(Enchantment.ARROW_INFINITE, 1);
             Bow.addEnchantment(Enchantment.ARROW_DAMAGE, 5);
@@ -130,7 +130,7 @@ public class ArenaCmd implements CommandExecutor {
             player.getInventory().setHelmet(Helmet);
             player.getInventory().addItem(Arrow);
 
-            // Set walking speed, survival, health, and message.
+            // Set walking speed, adventure, health, and message.
             player.setWalkSpeed(0.2f);
             sender.sendMessage("You have been teleported to the Arena.");
             player.setGameMode(GameMode.ADVENTURE);
