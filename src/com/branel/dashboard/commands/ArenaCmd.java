@@ -27,17 +27,18 @@ public class ArenaCmd implements CommandExecutor {
         if (cmd.getName().equalsIgnoreCase("Arena")){
             player.getInventory().clear();
             World epicgamers = Bukkit.getWorld("2021");
-            Location loc = new Location(epicgamers, 1192, 200.0, 1214.0, -91, 5);
-            Location spec = new Location(epicgamers, 1214, 69, 1213, 0 , 0);
-            player.teleport(loc);
-            player.getPlayer().setBedSpawnLocation(spec, true);
+            Location loc = new Location(epicgamers, 1192, 200.0, 1214.0, -91, 5); // Location of the arena
+            Location spec = new Location(epicgamers, 1214, 69, 1213, 0 , 0); // Location of the new spawn location
+            player.teleport(loc); // Teleports the user to the arena
+            player.getPlayer().setBedSpawnLocation(spec, true); // Sets new spawnlocation for user to reduce loading time upon next execution of the command.
 
             //Potion effects
-            player.addPotionEffect(new PotionEffect(PotionEffectType.INVISIBILITY, 50, 2, false, false, false));
-            player.addPotionEffect(new PotionEffect(PotionEffectType.INCREASE_DAMAGE, 99999, 1));
-            player.addPotionEffect(new PotionEffect(PotionEffectType.SATURATION, 99999, 99));
+            player.addPotionEffect(new PotionEffect(PotionEffectType.INVISIBILITY, 50, 2, false, false, false)); // Invis, unsure why I added this, might remove
+            player.addPotionEffect(new PotionEffect(PotionEffectType.INCREASE_DAMAGE, 99999, 1)); // Increased damage to make the axe a more viable weapon
+            player.addPotionEffect(new PotionEffect(PotionEffectType.SATURATION, 99999, 99)); // Saturation to remove the need for food in the arena
 
-            //Item stack
+
+            //Item stack, defining each term so that the server knows what items are being added to the user
             ItemStack Axe = new ItemStack(Material.NETHERITE_AXE);
             ItemStack Chestplate = new ItemStack(Material.LEATHER_CHESTPLATE);
             ItemStack Leggings = new ItemStack(Material.LEATHER_LEGGINGS);
@@ -57,7 +58,7 @@ public class ArenaCmd implements CommandExecutor {
             ItemMeta Tri = Trident.getItemMeta();
             ItemMeta Longbow = Bow.getItemMeta();
 
-            //Leather color
+            //Leather color, self expl
 
 
             Chest.setColor(Color.fromRGB(0, 0, 0));
@@ -66,7 +67,7 @@ public class ArenaCmd implements CommandExecutor {
             Boot.setColor(Color.fromRGB(0, 0, 0));
 
 
-            // Meta Flag
+            // Meta Flag. Hide all attri. and ench. to prevent distractions and prevent users from knowing the ench.
             Yxa.addItemFlags(ItemFlag.HIDE_ATTRIBUTES);
             Yxa.addItemFlags(ItemFlag.HIDE_ENCHANTS);
             Chest.addItemFlags(ItemFlag.HIDE_ATTRIBUTES);
@@ -85,7 +86,7 @@ public class ArenaCmd implements CommandExecutor {
 
 
 
-            // Unbreakable items
+            // Unbreakable items, prevents it being a meta around durabillity
             Yxa.setUnbreakable(true);
             Chest.setUnbreakable(true);
             Leg.setUnbreakable(true);
