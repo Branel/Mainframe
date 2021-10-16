@@ -28,4 +28,5 @@ public class GuiCommand implements CommandExecutor {
         player.openInventory(gui);
     return true;
     }
+
 }

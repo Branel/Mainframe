@@ -12,6 +12,9 @@ public class PvPKit implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender commandSender, Command command, String s, String[] strings) {
         Player player = (Player) commandSender;
+
+
+
         return true;
     }
 }

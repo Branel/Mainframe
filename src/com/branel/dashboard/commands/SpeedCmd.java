@@ -21,8 +21,8 @@ public class SpeedCmd implements CommandExecutor {
                     float amount = Float.parseFloat(args[0]);
                     float speed = amount / 100;
                         player.setFlySpeed(speed);
-                        player.sendMessage(ChatColor.GREEN + "Flyspeed was set to " + amount);
-                    // Takes user input 0-100, converts it from a string to a float, divides it by 100 [because function only accepts 0 - 1.0 values].
+                        player.sendMessage(ChatColor.GREEN + "Flyspeed set to " + amount);
+                    // User input 0-100, converts it from a string to a float, divides it by 100 (function only accepts 0 - 1.0 values).
                 }
                 catch (IllegalArgumentException e) {
                     player.sendMessage(ChatColor.RED + "Invalid input! /flyspeed 0 - 100.");
@@ -38,7 +38,8 @@ public class SpeedCmd implements CommandExecutor {
                     float input = Float.parseFloat(args[0]);
                     float walkspeed = input / 100;
                         player.setWalkSpeed(walkspeed);
-                        player.sendMessage(ChatColor.GREEN + "Walkspeed was set to " + input);
+                        player.sendMessage(ChatColor.GREEN + "Walkspeed set to " + input);
+                    // User input 0-100, converts it from a string to a float, divides it by 100 (function only accepts 0 - 1.0 values).
                 }
                 catch (IllegalArgumentException e) {
                     player.sendMessage(ChatColor.RED + "Invalid input! /walkspeed 0 - 100.");

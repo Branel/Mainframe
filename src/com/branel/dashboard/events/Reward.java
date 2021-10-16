@@ -14,7 +14,7 @@ public class Reward implements Listener {
     public void onDeathChat(PlayerDeathEvent e){
         if(e.getEntity().getKiller()!=null && e.getEntity().getKiller() instanceof Player){
             Player killer = e.getEntity().getKiller();
-            ItemStack reward = new ItemStack(Material.ENCHANTED_GOLDEN_APPLE);
+            ItemStack reward = new ItemStack(Material.GOLDEN_APPLE);
             killer.getInventory().addItem(reward);
             killer.getPlayer().sendMessage("You have been rewarded a Golden Apple.");
                     }
