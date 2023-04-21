@@ -2,7 +2,7 @@ name: Mainframe
 version: 1.0.0
 author: Branel
 main: com.branel.dashboard.Mainframe
-api-version: 1.16
+api-version: 1.19
 commands:
   cleanup:
     description: command
