@@ -3,7 +3,7 @@
     <output-path>$USER_HOME$/Desktop/plugins</output-path>
     <root id="archive" name="Mainframe.jar">
       <element id="module-output" name="Mainframe" />
-      <element id="file-copy" path="$USER_HOME$/api/spigot-api-1.19.4.jar" />
+      <element id="file-copy" path="$USER_HOME$/Downloads/spigot-api-1.19.4-R0.1-20230416.003614-63-shaded.jar" />
     </root>
   </artifact>
 </component>
