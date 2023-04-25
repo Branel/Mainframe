@@ -31,3 +31,6 @@ commands:
   survivalchallenge:
     description: command
     usage: /survivalchallenge
+  menu:
+    description: command
+    usage: /menu

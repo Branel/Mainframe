@@ -1,5 +1,6 @@
 package com.branel.dashboard.commands;
 
+import com.branel.dashboard.Mainframe;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
@@ -7,14 +8,34 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
+import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
 import java.util.ArrayList;
+import java.util.List;
 
-public class Menu implements CommandExecutor {
+public class Menu implements Listener, CommandExecutor {
     private String invName = "Server Selector";
+
+    public Menu(Mainframe plugin){
+        Bukkit.getPluginManager().registerEvents(this, plugin);
+    }
+
+    @EventHandler
+    public void onInventoryClick(InventoryClickEvent event) {
+        if(!event.getView().getTitle().equals(invName)){
+            return;
+        }
+
+        Player player = (Player) event.getWhoClicked();
+        int slot = event.getSlot();
+
+        event.setCancelled(true);
+    }
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String [] args) {
         if (!(sender instanceof Player)) {

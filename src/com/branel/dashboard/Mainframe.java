@@ -23,6 +23,7 @@ public class Mainframe extends JavaPlugin{
             getCommand("pvpkit").setExecutor(new PvPKit());
             getCommand("city").setExecutor(new Teleport());
             getCommand("survivalchallenge").setExecutor(new Teleport());
+            getCommand("menu").setExecutor(new Menu(this));
             getServer().getConsoleSender().sendMessage(ChatColor.GREEN + "[Mainframe]: Enabled");
     }
     @Override
